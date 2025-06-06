@@ -30,7 +30,7 @@ python3 -m app.main
 ```bash
 booking_bot/
 ├── app/
-│   ├── __init__.py             # Пустой, для признания папки модулем
+│   ├── __init__.py            
 │   ├── config.py              # Конфигурация через pydantic + dotenv
 │   ├── main.py                # Точка входа — запуск бота
 │   ├── db/
@@ -38,26 +38,11 @@ booking_bot/
 │   ├── handlers/
 │   │   └── booking.py         # Хендлеры aiogram для бронирования
 │   └── services/
-│       ├── __init__.py        # Пустой
+│       ├── __init__.py        
 │       ├── save_appointment.py # Логика сохранения записи в БД
 │       └── states.py          # FSM состояния для диалогов
 ├── .env.example               # Пример env файла с переменными
 ├── .gitignore                 # Исключаем лишнее из репозитория
 ├── README.md                  # Описание проекта, инструкции
 └── requirements.txt           # Зависимости для pip
-```
-## Зависимости
-См. requirements.txt
-```yaml
----
-
-**requirements.txt**
-
-```txt
-aiofiles==24.1.0
-aiogram==3.20.0.post0
-aiosqlite==0.21.0
-python-dotenv==1.1.0
-pydantic==2.11.5
-```
 ```
